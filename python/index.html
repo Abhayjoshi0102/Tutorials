@@ -9,7 +9,9 @@
 <ul>
 	<li class = "nocircle"><a href="#intro">Introduction</a></li>
 	<li class = "nocircle"><a href="#uses">Why should I learn Python</a></li>
-	<li class = "nocircle"><a href="#fstprgm">Hello World</a></li>
+	<li class = "nocircle"><a href="#firstprogram">Let's write our first program</a></li>
+	<li class = "nocircle"><a href="#runprogram">How to run Python code</a></li>
+	<li class = "nocircle"><a href="#var">Variables in Python</a></li>
 </ul>
 <h2 id ="intro">Introduction</h2>
 <p>Python is a general purpose<a href="#no1"><sup>1</sup></a> , interpreted, high level programming language. Some of the important features of Python are as below:</p>
@@ -20,6 +22,8 @@
 	<li>Automatic memory management</li>
 </ul>
 
+
+
 <h2 id ="uses">Why should I learn Python</h2>
 <p>Python is used mainly in below mentioned fields:</p>
 <ul>
@@ -29,12 +33,58 @@
 	<li>Desktop and GUI application development</li>
 </ul>
 
-<h2 id ="fstprgm">Hello World</h2>
-<p>Lets start Python with traditional hello world program. In order to write Python program, you mush have Python installed on your computer. If you are using Mac then Python would already be installed on your machine. To confirm, run <code class = "code"> python -v </code> command on your terminal. If Python is installed then it will return the version of Python installed on your machine. If you are using Windows machine, download Python <a href="https://www.python.org/downloads/">here</a> and istall on your machine. If you do not want to install Python on your machine and practice online <a href="https://try.jupyter.org/">Jupyter</a> is the best website.</p>
 
-<p>Lets start writing our very first program. Type <code> python </code> on command line to start python shell. For printing anything to console use inbuilt function <code> print </code>. Type <code> print("Hello world")</code> and you are done. Here is the code written in Jupyter.</p>
+
+<h2 id ="firstprogram">Let's write our first program</h2>
+<p>Lets start Python with traditional hello world program. In order to write Python program, you must have Python installed on your computer. If you are using Mac then Python would already be installed on your machine. To confirm, run <code class = "code"> python -V (note V is in uppercase) </code> command on your terminal. If Python is installed then it will return the version of Python installed on your machine. If you are using Windows machine, download Python <a href="https://www.python.org/downloads/">here</a> and install on your machine. If you do not want to install Python on your machine and practice online <a href="https://try.jupyter.org/">Jupyter</a> is the best website.</p>
+
+<p>Let's start writing our very first program. Type <code> python </code> on command line to start python shell. For printing anything to console use inbuilt function <code> print</code>. Type <code> print("Hello world")</code> and you are done. Here is the code written in Jupyter.</p>
 
 <img id ="helloworld" src="../Images/Hello_world.png">
+<br>
+<strong>Note: </strong>In Python 3, if you want to print anything you need to pass within parenthesis in print function while in Python 2 you can type the message after print e.g. print "Hello" and print("Hello") will print <strong>Hello</strong> in Python 2 but print "Hello" will return error and print("Hello") will print <strong>Hello</strong>.
+
+
+
+<h2 id ="runprogram">How to run Python code</h2>
+<p>Python code can be run mainly using below ways:</p>
+<ul>
+	<li><strong>Run code from interactive shell:</strong> You can enter to interactive shell by typing python on your command prompt (in Windows), shell (in Unix/Linux) or on terminal (in Mac). After that you can type Python code.</li>
+	<li><strong>Run Python source code file: </strong> You can run any Python source code file by typing python file_name.py on your command prompt.</li>
+	<li><strong>Run on Jupyter notebook: </strong>Highlight the cell by clicking anywhere on the cell and then click on run button.</li>
+</ul>
+
+
+
+<h2 id ="var">Variables in Python</h2>
+<p>Python is an object oriented, dynamically typed language. You do not need to declare the variable before using them. Here are some of the basic types supported by Python.
+	
+	<h3>Numbers</h3>
+	<p>Numbers are supported by most of the programming languages. Python supports integers and float data types. Here are some of the common operations that can be performed using numbers.</p>
+<img id ="airthematic" src="../Images/Airthematic.png">
+<br><br>
+Integer division can be performed in Python 3 using <strong>//</strong> operator so 3//2 will return 1.
+<br>
+** operator can be used to to calculate the power operation e.g. 2**5 will return 32.
+<br><br>
+<strong>Note: </strong> Python 2 returns integer when we perform division operation while Python 3 returns floating point number e.g. 3/2 will return 1 in Python 2 but will return 1.5 in python 3.
+</p>
+
+<h3>String</h3>
+<p>
+	String is sequence of characters. You can use single and double quotes to enclose any string. Using both types of quote allow us to use quotes within the string itself. we can also use escape character to allow quotes. Since String is sequence of characters, we can access any character by variable_name[position] notation. Use negative number if you want to start from back.
+</p>
+
+<h3>Boolean</h3>
+<p>
+	Boolean variable are mainly used for evaluating conditions and has only 2 constant values.
+	<ol>
+		<li>True</li>
+		<li>False</li>
+	</ol>
+</p>
+
+
 
 <pre>
 	
@@ -50,7 +100,7 @@
 
 
 </pre>
-<p id = "no1" class = "footer"><sup>1</sup> Pythin can be used for different pupposes like web development , machine learning, data visualization, not like PHP which is used just for web developmet. That's why it is called general purpose programming language.</p>
-<p id = "no2" class = "footer"><sup>2</sup> In static type languages like C, Java, we need to define a variable of certain type and in its lifetime or scope it can not hold values of diferent type.</p>
+<p id = "no1" class = "footer"><sup>1</sup> Python can be used for different purposes like web development, machine learning, data visualization, not like PHP which is used just for web developmet. That's why it is called general purpose programming language.</p>
+<p id = "no2" class = "footer"><sup>2</sup> In static type languages like C, Java, we need to define a variable of certain type and in its lifetime or scope it can not hold values of different type.</p>
 </body>
 </html>
